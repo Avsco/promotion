@@ -21,7 +21,7 @@ public class PromotionController {
     }
 
     @GetMapping("/$birthdate")
-    public List<String> getById() {
+    public List<String> sendPromotionToBirthdate() {
         Collection<Client> clients = this.service.sendDiscountEmail();
         return clients.stream().map(Client::getFullName).collect(Collectors.toList());
     }

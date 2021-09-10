@@ -18,7 +18,7 @@ public class DevelopmentBootstrap implements ApplicationListener<ContextRefreshe
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         persistClient("Alan", 1 , 1);
-        persistClient("Perez", 9 , 9);
+        persistClient("Perez", 10 , 9);
     }
 
     private void persistClient(String name, int day, int month) {
